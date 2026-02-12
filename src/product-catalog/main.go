@@ -315,13 +315,6 @@ func createClient(ctx context.Context, svcAddr string) (*grpc.ClientConn, error)
 		grpc.WithStatsHandler(otelgrpc.NewClientHandler()),
 	)
 }
-
-
-
-
-
-
-
-
-
-
+// The code above is a gRPC server implementation for a product catalog service. 
+// It includes OpenTelemetry instrumentation for tracing and metrics, as well as integration with OpenFeature for feature flagging. 
+// The server reads product data from JSON files, serves gRPC requests to list, get, and search products, and includes health check endpoints.
